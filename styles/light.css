@@ -1,47 +1,45 @@
-/* Светлая тема (принудительная) */
-.page.theme-light {
+.page.theme_light {
   --title-color: #FFC2E6;
   --text-color: #353430;
-  --accent-color: #FF8DCB;
-  --bg-color: #FFF1F7;
-  --button-color: #353430;
-  --decor-color: #353430;
-  --link-shadow: #FF8DCB;
-  --button-color-hover: rgba(50, 49, 45, 0.40);
-  --page-background-image: url(../images/cover-image-light.png);
-  --page-background-color: #FFF1F7;
+  --sub-text-color: #353430;
+  --accent-color: #ff8dcb;
+  --btn-color:#353430;
+  --backgroung-image: url(../images/cover-image-light.png);
 }
 
-.theme-light .decorated-zone__element {
+.theme_light .decorative__element {
   display: none;
 }
 
-.theme-light .header__title,
-.theme-light .footer__title {
-  text-shadow: 4px 4px 0 var(--accent-color);
+.theme_light .header__theme-menu-button:hover {
+  border: 1px solid rgba(50, 49, 45, 0.40);
 }
 
-/* Светлая тема (системная) */
 @media (prefers-color-scheme: light) {
   :root {
     --title-color: #FFC2E6;
     --text-color: #353430;
-    --accent-color: #FF8DCB;
-    --bg-color: #FFF1F7;
-    --button-color: #353430;
-    --decor-color: #353430;
-    --link-shadow: #FF8DCB;
-    --button-color-hover: rgba(50, 49, 45, 0.40);
-    --page-background-image: url(../images/cover-image-light.png);
-    --page-background-color: #FFF1F7;
+    --sub-text-color: #353430;
+    --accent-color: #ff8dcb;
+    --btn-color:#353430;
+    --backgroung-image: url(../images/cover-image-light.png);
   }
-  
-  .decorated-zone__element {
+  .decorative__element {
     display: none;
   }
   
-  .header__title,
+  .header__theme-menu-button:hover {
+    border: 1px solid rgba(50, 49, 45, 0.40);
+  }
+}  
+
+
+@media (min-width: 1024px) {
+  .header__title {
+    text-shadow: 4px 4px 0 #FF0070;
+  }
   .footer__title {
-    text-shadow: 4px 4px 0 var(--accent-color);
+    text-shadow: 4px 4px 0 #FF0070;
   }
 }
+
