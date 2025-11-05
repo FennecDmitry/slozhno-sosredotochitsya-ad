@@ -1,5 +1,4 @@
-/* Глобальные стили для проекта, их можно дополнять и менять по желанию */
-
+/* Глобальные стили для проекта */
 *,
 *::before,
 *::after {
@@ -39,4 +38,11 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  background: transparent;
+  border: none;
+}
+
+button:focus,
+a:focus {
+  outline: none;
 }
